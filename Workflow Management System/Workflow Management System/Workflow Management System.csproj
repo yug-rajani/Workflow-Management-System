@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F44DE8B-F7FB-4E7F-A898-448607AB91E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Workflow_Management_System</RootNamespace>
+    <AssemblyName>Workflow Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddEmployee.Designer.cs">
+      <DependentUpon>Admin_AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddManager.Designer.cs">
+      <DependentUpon>Admin_AddManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ManageEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ManageEmployees.Designer.cs">
+      <DependentUpon>Admin_ManageEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ProjectManagers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ProjectManagers.Designer.cs">
+      <DependentUpon>Admin_ProjectManagers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_TrackProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_TrackProjects.Designer.cs">
+      <DependentUpon>Admin_TrackProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CommonLoginDetails.cs" />
+    <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\Manager.cs" />
+    <Compile Include="Class\Query.cs" />
+    <Compile Include="Class\Task.cs" />
+    <Compile Include="EmployeeHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeHome.Designer.cs">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLogin.Designer.cs">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_AskQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_AskQuery.Designer.cs">
+      <DependentUpon>Employee_AskQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_TasksDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_TasksDetails.Designer.cs">
+      <DependentUpon>Employee_TasksDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_ViewQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_ViewQuery.Designer.cs">
+      <DependentUpon>Employee_ViewQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_AssignEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_AssignEmployee.Designer.cs">
+      <DependentUpon>Manager_AssignEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_CreateTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_CreateTask.Designer.cs">
+      <DependentUpon>Manager_CreateTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_ManageProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_ManageProjects.Designer.cs">
+      <DependentUpon>Manager_ManageProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_ManageTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_ManageTasks.Designer.cs">
+      <DependentUpon>Manager_ManageTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_ResolveQueries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_ResolveQueries.Designer.cs">
+      <DependentUpon>Manager_ResolveQueries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_UpdateProjectStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_UpdateProjectStatus.Designer.cs">
+      <DependentUpon>Manager_UpdateProjectStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Manager_CreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_CreateProject.Designer.cs">
+      <DependentUpon>Manager_CreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.cs">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlowDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkFlowDBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddEmployee.resx">
+      <DependentUpon>Admin_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddManager.resx">
+      <DependentUpon>Admin_AddManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ManageEmployees.resx">
+      <DependentUpon>Admin_ManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ProjectManagers.resx">
+      <DependentUpon>Admin_ProjectManagers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_TrackProjects.resx">
+      <DependentUpon>Admin_TrackProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeHome.resx">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_AskQuery.resx">
+      <DependentUpon>Employee_AskQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_TasksDetails.resx">
+      <DependentUpon>Employee_TasksDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_ViewQuery.resx">
+      <DependentUpon>Employee_ViewQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_AssignEmployee.resx">
+      <DependentUpon>Manager_AssignEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_CreateTask.resx">
+      <DependentUpon>Manager_CreateTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_ManageProjects.resx">
+      <DependentUpon>Manager_ManageProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_ManageTasks.resx">
+      <DependentUpon>Manager_ManageTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_ResolveQueries.resx">
+      <DependentUpon>Manager_ResolveQueries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_UpdateProjectStatus.resx">
+      <DependentUpon>Manager_UpdateProjectStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Manager_CreateProject.resx">
+      <DependentUpon>Manager_CreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WorkFlowDBDataSet.xsc">
+      <DependentUpon>WorkFlowDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet.xss">
+      <DependentUpon>WorkFlowDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet1.xsc">
+      <DependentUpon>WorkFlowDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet1.xss">
+      <DependentUpon>WorkFlowDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet10.xsc">
+      <DependentUpon>WorkFlowDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet10.xss">
+      <DependentUpon>WorkFlowDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet11.xsc">
+      <DependentUpon>WorkFlowDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet11.xss">
+      <DependentUpon>WorkFlowDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet12.xsc">
+      <DependentUpon>WorkFlowDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet12.xss">
+      <DependentUpon>WorkFlowDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet13.xsc">
+      <DependentUpon>WorkFlowDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet13.xss">
+      <DependentUpon>WorkFlowDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet14.xsc">
+      <DependentUpon>WorkFlowDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet14.xss">
+      <DependentUpon>WorkFlowDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet15.xsc">
+      <DependentUpon>WorkFlowDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet15.xss">
+      <DependentUpon>WorkFlowDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet2.xsc">
+      <DependentUpon>WorkFlowDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet2.xss">
+      <DependentUpon>WorkFlowDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet3.xsc">
+      <DependentUpon>WorkFlowDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet3.xss">
+      <DependentUpon>WorkFlowDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet4.xsc">
+      <DependentUpon>WorkFlowDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet4.xss">
+      <DependentUpon>WorkFlowDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet5.xsc">
+      <DependentUpon>WorkFlowDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet5.xss">
+      <DependentUpon>WorkFlowDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet6.xsc">
+      <DependentUpon>WorkFlowDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet6.xss">
+      <DependentUpon>WorkFlowDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet7.xsc">
+      <DependentUpon>WorkFlowDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet7.xss">
+      <DependentUpon>WorkFlowDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet8.xsc">
+      <DependentUpon>WorkFlowDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet8.xss">
+      <DependentUpon>WorkFlowDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet9.xsc">
+      <DependentUpon>WorkFlowDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="WorkFlowDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkFlowDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkFlowDBDataSet9.xss">
+      <DependentUpon>WorkFlowDBDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

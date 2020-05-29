@@ -1,0 +1,30 @@
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\bin\Debug\Workflow Management System.exe.config
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\bin\Debug\Workflow Management System.exe
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\bin\Debug\Workflow Management System.pdb
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow Management System.csprojAssemblyReference.cache
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Properties.Resources.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow Management System.csproj.GenerateResource.cache
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow Management System.exe
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow Management System.pdb
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.AdminLogin.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.EmployeeLogin.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.ManagerLogin.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.WelcomeForm.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.AdminHome.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.EmployeeHome.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.ManagerHome.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Admin_ManageEmployees.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Admin_ProjectManagers.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Admin_TrackProjects.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Admin_AddEmployee.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Employee_AskQuery.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Employee_TasksDetails.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Employee_ViewQuery.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_ManageProjects.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_ManageTasks.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_ResolveQueries.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_UpdateProjectStatus.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Admin_AddManager.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_CreateProject.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_CreateTask.resources
+C:\Users\Admin\source\Repos\Workflow Management System\Workflow Management System\obj\Debug\Workflow_Management_System.Manager_AssignEmployee.resources
